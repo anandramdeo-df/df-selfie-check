@@ -1,0 +1,11 @@
+framework module SelfieCheckFramework {
+  umbrella header "SelfieCheckFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module SelfieCheckFramework.Swift {
+    header "SelfieCheckFramework-Swift.h"
+    requires objc
+}
