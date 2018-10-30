@@ -1,6 +1,4 @@
-# df-selfie-check
-
-<h1>2. Selfie Check SDK</h1>
+# df-selfie-check (Selfie Check SDK)
 
 This SDK is created to automatically capture the user's selfie using the facial expression( `eye-blink` in our case). It will ensure that user have to be physically present while taking the selfie.
 
