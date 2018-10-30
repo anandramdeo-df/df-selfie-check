@@ -20,6 +20,8 @@ This SDK is created to automatically capture the user's selfie using the facial 
 
         }
         present(vc, animated: true, completion: nil)
+
+Output would be:
 <br>
 <p align="left">
 <img src="images/selfie-check/user_guide.jpg" width="200"/> 
@@ -29,8 +31,8 @@ This SDK is created to automatically capture the user's selfie using the facial 
   
 <br>
 <br>
-<br>
-<b>You can cutomize the color and theme of the project according to your need. You can have a look at the sample below:</b>
+<b>You can cutomize the color and theme of the SDK's view according to your projects user-experience.</b> 
+<b>Just access the properties mentioned in the SDK. Have a look at the sample below:</b>
 
         let vc = SelfieCheck.sharedInstance
         vc.globalBGColor = #colorLiteral(red: 0.9137254902, green: 0.3921568627, blue: 0.3647058824, alpha: 1)
@@ -49,6 +51,8 @@ This SDK is created to automatically capture the user's selfie using the facial 
             self.selfieImageView.image = image
         }
         self.present(vc, animated: true, completion: nil)
+
+Output would be:
 <br>
 <p align="left">
 <img src="images/config/user_guide.jpg" width="200"/> 
