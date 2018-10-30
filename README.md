@@ -28,7 +28,9 @@ This SDK is created to automatically capture the user's selfie using the facial 
 <img src="images/selfie-check/choose_photo.jpg" width="200"/>
   
 <br>
-- You can cutomize the color and theme of the project according to your need. You can have a look at the sample below:
+<br>
+<br>
+<b>You can cutomize the color and theme of the project according to your need. You can have a look at the sample below:</b>
 
         let vc = SelfieCheck.sharedInstance
         vc.globalBGColor = #colorLiteral(red: 0.9137254902, green: 0.3921568627, blue: 0.3647058824, alpha: 1)
