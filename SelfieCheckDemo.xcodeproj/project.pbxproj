@@ -12,8 +12,8 @@
 		C422BE8B21746E9600A1D4E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C422BE8921746E9600A1D4E7 /* Main.storyboard */; };
 		C422BE8D21746E9800A1D4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C422BE8C21746E9800A1D4E7 /* Assets.xcassets */; };
 		C422BE9021746E9800A1D4E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C422BE8E21746E9800A1D4E7 /* LaunchScreen.storyboard */; };
-		C422BE9821746EB800A1D4E7 /* SelfieCheckFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C422BE9721746EB800A1D4E7 /* SelfieCheckFramework.framework */; };
-		C422BE9921746EB800A1D4E7 /* SelfieCheckFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C422BE9721746EB800A1D4E7 /* SelfieCheckFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C485B02A21883A8F00127208 /* SelfieCheckFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C485B02921883A8F00127208 /* SelfieCheckFramework.framework */; };
+		C485B02B21883A8F00127208 /* SelfieCheckFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C485B02921883A8F00127208 /* SelfieCheckFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C422BE9921746EB800A1D4E7 /* SelfieCheckFramework.framework in Embed Frameworks */,
+				C485B02B21883A8F00127208 /* SelfieCheckFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +38,7 @@
 		C422BE8C21746E9800A1D4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C422BE8F21746E9800A1D4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C422BE9121746E9800A1D4E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C422BE9721746EB800A1D4E7 /* SelfieCheckFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SelfieCheckFramework.framework; sourceTree = "<group>"; };
+		C485B02921883A8F00127208 /* SelfieCheckFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SelfieCheckFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C422BE9821746EB800A1D4E7 /* SelfieCheckFramework.framework in Frameworks */,
+				C485B02A21883A8F00127208 /* SelfieCheckFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		C422BE7921746E9600A1D4E7 = {
 			isa = PBXGroup;
 			children = (
-				C422BE9721746EB800A1D4E7 /* SelfieCheckFramework.framework */,
+				C485B02921883A8F00127208 /* SelfieCheckFramework.framework */,
 				C422BE8421746E9600A1D4E7 /* SelfieCheckDemo */,
 				C422BE8321746E9600A1D4E7 /* Products */,
 			);

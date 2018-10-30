@@ -36,13 +36,37 @@ class ViewController: UIViewController {
     }
     
     @objc func selfieButtonClick(_ sender: UIButton) {
-        guard let vc = SelfieCheckViewController.storyboardInstance() else { fatalError("Not Found") }
+        
+        // Open view with new configuration
+        // self.openViewWithUpdatedConfiguration()
+        
+        // Open view with default configuration
+        let vc = SelfieCheck.sharedInstance
         vc.returnClosure = { image in
             self.selfieImageView.image = image
         }
-        let navVC = UINavigationController(rootViewController: vc)
-        present(navVC, animated: true, completion: nil)
+        present(vc, animated: true, completion: nil)
     }
 
+    func openViewWithUpdatedConfiguration() {
+        let vc = SelfieCheck.sharedInstance
+        vc.globalBGColor = #colorLiteral(red: 0.9137254902, green: 0.3921568627, blue: 0.3647058824, alpha: 1)
+        vc.globalMessagesColor = UIColor.white
+        vc.globalTitleColor = UIColor.white
+        vc.globalButtonCornerRadius = 5
+        vc.globalOptionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
+        vc.globalTitleOptionButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        vc.navigationTitleColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        vc.globalActioButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        vc.globalTitleActionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
+        vc.tipGuidanceOne = "Tip : Please look straight and then blink eyes."
+        vc.titlePermissionVC = "Please Allow camera permission."
+        
+        vc.returnClosure = { image in
+            self.selfieImageView.image = image
+        }
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 
