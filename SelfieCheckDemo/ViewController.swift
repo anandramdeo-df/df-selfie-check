@@ -38,34 +38,45 @@ class ViewController: UIViewController {
     @objc func selfieButtonClick(_ sender: UIButton) {
         
         // Open view with new configuration
-        // self.openViewWithUpdatedConfiguration()
+         self.openViewWithUpdatedConfiguration()
         
         // Open view with default configuration
-        let vc = SelfieCheck.sharedInstance
-        vc.returnClosure = { image in
-            self.selfieImageView.image = image
-        }
-        present(vc, animated: true, completion: nil)
+//        let vc = SelfieCheck.sharedInstance
+//        vc.returnClosure = { image in
+//            self.selfieImageView.image = image
+//        }
+//        present(vc, animated: true, completion: nil)
     }
 
     func openViewWithUpdatedConfiguration() {
+        
         let vc = SelfieCheck.sharedInstance
+        
         vc.globalBGColor = #colorLiteral(red: 0.9137254902, green: 0.3921568627, blue: 0.3647058824, alpha: 1)
         vc.globalMessagesColor = UIColor.white
         vc.globalTitleColor = UIColor.white
         vc.globalButtonCornerRadius = 5
         vc.globalOptionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
         vc.globalTitleOptionButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
-        vc.navigationTitleColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+
+        vc.navigationTitleColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
+        vc.navigationBarColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        
         vc.globalActioButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
         vc.globalTitleActionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
-        vc.tipGuidanceOne = "Tip : Please look straight and then blink eyes."
-        vc.titlePermissionVC = "Please Allow camera permission."
         
+        vc.globalBorderButtonColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        vc.globalOptionBorderButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        
+        vc.overlayColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        
+        vc.tipGuidanceOne = "Tip : Please look straight and then blink eyes."
+        vc.titlePermissionVC = "Please allow camera permission."
         vc.returnClosure = { image in
             self.selfieImageView.image = image
         }
         self.present(vc, animated: true, completion: nil)
+        
     }
     
 }
