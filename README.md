@@ -72,6 +72,86 @@ Updated UI output would be:
   
 <br>
   
+<h2>Here are the list of all the configurable properties, you may need:</h2>
+
+    /** This property change the background colour of the guidance screen. */
+    public var globalBGColor: UIColor
+
+    /** This property change the colour of the photo guidance button. */
+    public var globalActioButtonColor: UIColor
+
+    /** This property change the colour of the title of photo guidance button. */
+    public var globalTitleActionButtonColor: UIColor
+
+    /** This property change the corner radius of the photo guidance button. */
+    public var globalButtonCornerRadius: CGFloat
+
+    /** This property change the color of the cancle button, default is white */
+    public var globalOptionButtonColor: UIColor
+
+    /** This property change the colour of the title of photo guidance button. */
+    public var globalTitleOptionButtonColor: UIColor
+
+    /** This property change the color of the title of all the screens. */
+    public var globalTitleColor: UIColor
+
+    /** This property change the color of the messages of all the screens. */
+    public var globalMessagesColor: UIColor
+
+    /** This property change the color of the navigation bar. */
+    public var navigationTitleColor: UIColor
+
+    /** This property change the color of the navigation bar. */
+    public var navigationBarColor: UIColor
+
+    /** This property change the color of the border global button. */
+    public var globalBorderButtonColor: UIColor
+
+    /** This property change the color of the border global option button. */
+    public var globalOptionBorderButtonColor: UIColor
+
+    /** This property change the navigation title for first guidance view controller. */
+    public var titleNavGuidanceOne: String?
+
+    /** This property change the title message for first guidance view controller. */
+    public var messageGuidanceOne: String?
+
+    /** This property change the tip field on the first guidance view controller. */
+    public var tipGuidanceOne: String?
+
+    /** This property change the title of action button for first guidance view controller. */
+    public var actionTitleGuidanceOne: String?
+
+    /** This property change the title of cancle button for first guidance view controller. */
+    public var cancleTitleGuidanceOne: String?
+
+    /** This property change the navigation title for permission view controller. */
+    public var titleNavPermissionVC: String?
+
+    /** This property change the title for permission view controller. */
+    public var titlePermissionVC: String?
+
+    /** This property change the message for permission view controller. */
+    public var messagePermissionVC: String?
+
+    /** This property change the title of action button for permission view controller.  */
+    public var actionTitlePermissionVC: String?
+
+    /** This property change the title of cancle button for permission view controller.  */
+    public var cancleTitlePermissionVC: String?
+
+    /** This property change the title of action button for select selfie.  */
+    public var actionTitleSelectSelfieVC: String?
+
+    /** This property change the title of cancle button for permission view controller.  */
+    public var cancleTitleSelectSelfieVC: String?
+
+    /** This property return the selfie image of the user. */
+    public var returnClosure: ((UIImage?) -> Void)?
+
+    public var overlayColor: UIColor
+
+<br>
 ---
 
 <br>
