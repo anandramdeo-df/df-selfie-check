@@ -146,10 +146,11 @@ Updated UI output would be:
     /** This property change the title of cancle button for permission view controller.  */
     public var cancleTitleSelectSelfieVC: String?
 
+    /** This property changes the color for overlay view on capture-selfie screen.*/
+    public var overlayColor: UIColor
+    
     /** This property return the selfie image of the user. */
     public var returnClosure: ((UIImage?) -> Void)?
-
-    public var overlayColor: UIColor
 
 <br>
 ---
