@@ -74,7 +74,7 @@ Updated UI output would be:
   
 <h2>Here are the list of all the configurable properties, you may need:</h2>
 
-    /** This property change the background colour of the guidance screen. */
+    // This property change the background colour of the guidance screen.
     public var globalBGColor: UIColor
 
     /** This property change the colour of the photo guidance button. */
