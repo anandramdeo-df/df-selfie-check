@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C401C0FF218B4CB900ED5CA9 /* SelfieCheckFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C401C0FE218B4CB900ED5CA9 /* SelfieCheckFramework.framework */; };
-		C401C100218B4CB900ED5CA9 /* SelfieCheckFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C401C0FE218B4CB900ED5CA9 /* SelfieCheckFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4C51F82DA6C1B78F9CEB2195 /* Pods_SelfieCheckDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CC53F4F461701EABB62E3D /* Pods_SelfieCheckDemo.framework */; };
 		C422BE8621746E9600A1D4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422BE8521746E9600A1D4E7 /* AppDelegate.swift */; };
 		C422BE8821746E9600A1D4E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422BE8721746E9600A1D4E7 /* ViewController.swift */; };
 		C422BE8B21746E9600A1D4E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C422BE8921746E9600A1D4E7 /* Main.storyboard */; };
@@ -23,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C401C100218B4CB900ED5CA9 /* SelfieCheckFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,7 +29,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C401C0FE218B4CB900ED5CA9 /* SelfieCheckFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SelfieCheckFramework.framework; sourceTree = "<group>"; };
+		02DB8C827BF29C5947BA30C4 /* Pods-SelfieCheckDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfieCheckDemo.release.xcconfig"; path = "Target Support Files/Pods-SelfieCheckDemo/Pods-SelfieCheckDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5EA36FE1B07BD5F11EC34331 /* Pods-SelfieCheckDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfieCheckDemo.debug.xcconfig"; path = "Target Support Files/Pods-SelfieCheckDemo/Pods-SelfieCheckDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		62CC53F4F461701EABB62E3D /* Pods_SelfieCheckDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfieCheckDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C422BE8221746E9600A1D4E7 /* SelfieCheckDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfieCheckDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C422BE8521746E9600A1D4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C422BE8721746E9600A1D4E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,19 +46,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C401C0FF218B4CB900ED5CA9 /* SelfieCheckFramework.framework in Frameworks */,
+				4C51F82DA6C1B78F9CEB2195 /* Pods_SelfieCheckDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96A6BDC48E71EDF31D69E746 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EA36FE1B07BD5F11EC34331 /* Pods-SelfieCheckDemo.debug.xcconfig */,
+				02DB8C827BF29C5947BA30C4 /* Pods-SelfieCheckDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C422BE7921746E9600A1D4E7 = {
 			isa = PBXGroup;
 			children = (
-				C401C0FE218B4CB900ED5CA9 /* SelfieCheckFramework.framework */,
 				C422BE8421746E9600A1D4E7 /* SelfieCheckDemo */,
 				C422BE8321746E9600A1D4E7 /* Products */,
+				96A6BDC48E71EDF31D69E746 /* Pods */,
+				F709FF50342B6F43BCADF428 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +94,14 @@
 			path = SelfieCheckDemo;
 			sourceTree = "<group>";
 		};
+		F709FF50342B6F43BCADF428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62CC53F4F461701EABB62E3D /* Pods_SelfieCheckDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,10 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C422BE9421746E9800A1D4E7 /* Build configuration list for PBXNativeTarget "SelfieCheckDemo" */;
 			buildPhases = (
+				33119BC9D69A49DB158DD303 /* [CP] Check Pods Manifest.lock */,
 				C422BE7E21746E9600A1D4E7 /* Sources */,
 				C422BE7F21746E9600A1D4E7 /* Frameworks */,
 				C422BE8021746E9600A1D4E7 /* Resources */,
 				C422BE9A21746EB800A1D4E7 /* Embed Frameworks */,
+				802831D8DEC30AD658EE02D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +170,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33119BC9D69A49DB158DD303 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelfieCheckDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		802831D8DEC30AD658EE02D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SelfieCheckDemo/Pods-SelfieCheckDemo-frameworks.sh",
+				"${PODS_ROOT}/df-selfie-check/SelfieCheckFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SelfieCheckFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SelfieCheckDemo/Pods-SelfieCheckDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C422BE7E21746E9600A1D4E7 /* Sources */ = {
@@ -300,6 +368,7 @@
 		};
 		C422BE9521746E9800A1D4E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA36FE1B07BD5F11EC34331 /* Pods-SelfieCheckDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -324,6 +393,7 @@
 		};
 		C422BE9621746E9800A1D4E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02DB8C827BF29C5947BA30C4 /* Pods-SelfieCheckDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
