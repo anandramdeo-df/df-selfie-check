@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "df-selfie-check"
-  spec.version      = "1.1"
+  spec.version      = "1.0"
   spec.summary      = "This SDK is created to automatically capture the user's selfie using the facial expression( eye-blink in our case)."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => 'https://github.com/anandramdeo-df/df-selfie-check/releases/download/1.1/SelfieCheckFramework.zip' }
+  spec.source       = { :http => 'https://github.com/anandramdeo-df/df-selfie-check/releases/download/1.0/SelfieCheckFramework.zip' }
   
   spec.ios.deployment_target = '10.0'
   spec.ios.vendored_frameworks = 'SelfieCheckFramework.framework'
