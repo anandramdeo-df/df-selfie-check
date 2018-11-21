@@ -4,22 +4,48 @@ This SDK is created to automatically capture the user's selfie using the facial 
 
 <b>You can achieve the functionality with easy integration of following steps:</b>
 
-- Add the SDK to your project, don't forget to add add it in `Embedded Binaries`.
+- In a new terminal window, run `pod install --repo-update` to install and update. Get [Cocoapods](https://cocoapods.org/)
+*you can skip this case if you have updated pod in you mac.*
+
+- Create the podfile in your project.
+```
+pod init
+```
+
+- Open the pod file from directory and add pods in podfile.
+```
+pod   pod 'df-selfie-check', '~> <Pod version>'
+```
+
+- Run command to insatll 
+```
+pod install
+```
+Now close the xcode project and open prj.xcworkspace instead.
+
+- Add your org's SLCAccessToken token in your `Info.plist` file.
 
 - `import SelfieCheckFramework` in your `UIViewController` file where you want to use this feature.
 
 - And instantiate the view with following code.
 
-        // Open view with default configuration
-        let vc = SelfieCheck.sharedInstance
-        vc.returnClosure = { image in
+         // Open view with default configuration
+         SelfieCheck.sharedInstance.storyboardInstance(success: { [weak self] viewController in
+            DispatchQueue.main.async {
+                if let vc = viewController {
+                    self?.present(vc, animated: true, completion: nil)
+                }
+            }
+            }, failure: { (error) in
+                // Get the error if you are not authorized to access framework.
+                print(error?.userInfo)
+        })
 
+        selfiCheck.returnClosure = { image in
             // Play with image here
             // Code Here
             // ...
-
         }
-        present(vc, animated: true, completion: nil)
 
 Output would be:
 <br>
