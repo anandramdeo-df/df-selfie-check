@@ -14,7 +14,7 @@ pod init
 
 - Open the pod file from directory and add pods in podfile.
 ```
-pod 'df-selfie-check', '~> 1.1'
+pod 'df-selfie-check'
 ```
 
 - Run command to install
