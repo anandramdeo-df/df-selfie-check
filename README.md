@@ -14,14 +14,14 @@ pod init
 
 - Open the pod file from directory and add pods in podfile.
 ```
-pod   pod 'df-selfie-check', '~> 1.1'
+pod 'df-selfie-check', '~> 1.1'
 ```
 
 - Run command to install
 ```
 pod install
 ```
-<i> Now close the xcode project and open prj.xcworkspace instead. <i>
+<i> Now close the xcode project and open prj.xcworkspace instead. </i>
 
 
 - Add your org's `SLCAccessToken`  token in your `Info.plist` file.
