@@ -14,16 +14,17 @@ pod init
 
 - Open the pod file from directory and add pods in podfile.
 ```
-pod   pod 'df-selfie-check', '~> <Pod version>'
+pod   pod 'df-selfie-check', '~> 1.1'
 ```
 
-- Run command to insatll 
+- Run command to install
 ```
 pod install
 ```
-Now close the xcode project and open prj.xcworkspace instead.
+<i> Now close the xcode project and open prj.xcworkspace instead. <i>
 
-- Add your org's SLCAccessToken token in your `Info.plist` file.
+
+- Add your org's `SLCAccessToken`  token in your `Info.plist` file.
 
 - `import SelfieCheckFramework` in your `UIViewController` file where you want to use this feature.
 
@@ -61,7 +62,7 @@ Output would be:
 
 <i>Just access the properties mentioned in the SDK. Have a look at the sample below:</i>
 
-         let selfiCheck = SelfieCheck.sharedInstance
+        let selfiCheck = SelfieCheck.sharedInstance
         selfiCheck.globalBGColor = #colorLiteral(red: 0.9137254902, green: 0.3921568627, blue: 0.3647058824, alpha: 1)
         selfiCheck.globalMessagesColor = UIColor.white
         selfiCheck.globalTitleColor = UIColor.white
