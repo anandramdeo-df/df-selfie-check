@@ -1,4 +1,4 @@
-# DFSelfieCheck (Selfie Check SDK)
+# df-selfie-check (Selfie Check SDK)
 
 This SDK is created to automatically capture the user's selfie using the facial expression( `eye-blink` in our case). It will ensure that user have to be physically present while taking the selfie.
 
@@ -14,7 +14,7 @@ pod init
 
 - Open the pod file from directory and add pods in podfile.
 ```
-pod 'DFSelfieCheck'
+pod 'df-selfie-check'
 ```
 
 - Run command to install
@@ -26,7 +26,7 @@ pod install
 
 - Add your org's `SLCAccessToken`  token in your `Info.plist` file.
 
-- `import DFSelfieCheck` in your `UIViewController` file where you want to use this feature.
+- `import SelfieCheckFramework` in your `UIViewController` file where you want to use this feature.
 
 - And instantiate the view with following code.
 
