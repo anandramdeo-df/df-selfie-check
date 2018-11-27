@@ -43,8 +43,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>SLCAccessToken</key>
-	<string>&lt;Enter your access token here&gt;</string>
+	<key>SLAccessToken</key>
+	<string>Enter your access token here</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
