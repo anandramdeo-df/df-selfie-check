@@ -32,7 +32,7 @@
 		02DB8C827BF29C5947BA30C4 /* Pods-SelfieCheckDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfieCheckDemo.release.xcconfig"; path = "Target Support Files/Pods-SelfieCheckDemo/Pods-SelfieCheckDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5EA36FE1B07BD5F11EC34331 /* Pods-SelfieCheckDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfieCheckDemo.debug.xcconfig"; path = "Target Support Files/Pods-SelfieCheckDemo/Pods-SelfieCheckDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		62CC53F4F461701EABB62E3D /* Pods_SelfieCheckDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfieCheckDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C422BE8221746E9600A1D4E7 /* SelfieCheckDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfieCheckDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C422BE8221746E9600A1D4E7 /* DFSelfieAuthExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DFSelfieAuthExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C422BE8521746E9600A1D4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C422BE8721746E9600A1D4E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C422BE8A21746E9600A1D4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,14 +59,13 @@
 				5EA36FE1B07BD5F11EC34331 /* Pods-SelfieCheckDemo.debug.xcconfig */,
 				02DB8C827BF29C5947BA30C4 /* Pods-SelfieCheckDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		C422BE7921746E9600A1D4E7 = {
 			isa = PBXGroup;
 			children = (
-				C422BE8421746E9600A1D4E7 /* SelfieCheckDemo */,
+				C422BE8421746E9600A1D4E7 /* DFSelfieAuthExample */,
 				C422BE8321746E9600A1D4E7 /* Products */,
 				96A6BDC48E71EDF31D69E746 /* Pods */,
 				F709FF50342B6F43BCADF428 /* Frameworks */,
@@ -76,12 +75,12 @@
 		C422BE8321746E9600A1D4E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C422BE8221746E9600A1D4E7 /* SelfieCheckDemo.app */,
+				C422BE8221746E9600A1D4E7 /* DFSelfieAuthExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C422BE8421746E9600A1D4E7 /* SelfieCheckDemo */ = {
+		C422BE8421746E9600A1D4E7 /* DFSelfieAuthExample */ = {
 			isa = PBXGroup;
 			children = (
 				C422BE8521746E9600A1D4E7 /* AppDelegate.swift */,
@@ -91,7 +90,7 @@
 				C422BE8E21746E9800A1D4E7 /* LaunchScreen.storyboard */,
 				C422BE9121746E9800A1D4E7 /* Info.plist */,
 			);
-			path = SelfieCheckDemo;
+			path = DFSelfieAuthExample;
 			sourceTree = "<group>";
 		};
 		F709FF50342B6F43BCADF428 /* Frameworks */ = {
@@ -105,9 +104,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C422BE8121746E9600A1D4E7 /* SelfieCheckDemo */ = {
+		C422BE8121746E9600A1D4E7 /* DFSelfieAuthExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C422BE9421746E9800A1D4E7 /* Build configuration list for PBXNativeTarget "SelfieCheckDemo" */;
+			buildConfigurationList = C422BE9421746E9800A1D4E7 /* Build configuration list for PBXNativeTarget "DFSelfieAuthExample" */;
 			buildPhases = (
 				33119BC9D69A49DB158DD303 /* [CP] Check Pods Manifest.lock */,
 				C422BE7E21746E9600A1D4E7 /* Sources */,
@@ -120,9 +119,9 @@
 			);
 			dependencies = (
 			);
-			name = SelfieCheckDemo;
+			name = DFSelfieAuthExample;
 			productName = SelfieCheckDemo;
-			productReference = C422BE8221746E9600A1D4E7 /* SelfieCheckDemo.app */;
+			productReference = C422BE8221746E9600A1D4E7 /* DFSelfieAuthExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +139,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C422BE7D21746E9600A1D4E7 /* Build configuration list for PBXProject "SelfieCheckDemo" */;
+			buildConfigurationList = C422BE7D21746E9600A1D4E7 /* Build configuration list for PBXProject "DFSelfieAuthExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C422BE8121746E9600A1D4E7 /* SelfieCheckDemo */,
+				C422BE8121746E9600A1D4E7 /* DFSelfieAuthExample */,
 			);
 		};
 /* End PBXProject section */
@@ -420,7 +419,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C422BE7D21746E9600A1D4E7 /* Build configuration list for PBXProject "SelfieCheckDemo" */ = {
+		C422BE7D21746E9600A1D4E7 /* Build configuration list for PBXProject "DFSelfieAuthExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C422BE9221746E9800A1D4E7 /* Debug */,
@@ -429,7 +428,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C422BE9421746E9800A1D4E7 /* Build configuration list for PBXNativeTarget "SelfieCheckDemo" */ = {
+		C422BE9421746E9800A1D4E7 /* Build configuration list for PBXNativeTarget "DFSelfieAuthExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C422BE9521746E9800A1D4E7 /* Debug */,

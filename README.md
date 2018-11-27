@@ -1,4 +1,4 @@
-# df-selfie-check (Selfie Check SDK)
+# df-selfie-check (DFSelfieAuth SDK)
 
 This SDK is created to automatically capture the user's selfie using the facial expression( `eye-blink` in our case). It will ensure that user have to be physically present while taking the selfie.
 
@@ -14,39 +14,47 @@ pod init
 
 - Open the pod file from directory and add pods in podfile.
 ```
-pod 'df-selfie-check'
+pod 'DFSelfieAuth'
 ```
 
 - Run command to install
 ```
 pod install
 ```
+<i> If any error occure in the process of `pod install` then try with `pod update` command.
 <i> Now close the xcode project and open prj.xcworkspace instead. </i>
 
 
-- Add your org's `SLCAccessToken`  token in your `Info.plist` file.
+- Add your org's `SLAccessToken`  token in your `Info.plist` file.
+    ```
+    <key>SLAccessToken</key>
+    <string>Enter your org&apos;s token</string>
+    ```
 
-- `import SelfieCheckFramework` in your `UIViewController` file where you want to use this feature.
+- `import DFSelfieAuth` in your `UIViewController` file where you want to use this feature.
 
 - And instantiate the view with following code.
 
          // Open view with default configuration
-         SelfieCheck.sharedInstance.storyboardInstance(success: { [weak self] viewController in
-            DispatchQueue.main.async {
-                if let vc = viewController {
-                    self?.present(vc, animated: true, completion: nil)
-                }
-            }
-            }, failure: { (error) in
-                // Get the error if you are not authorized to access framework.
-                print(error?.userInfo)
-        })
+         let DFSAInstance = DFSelfieAuth.sharedInstance
 
-        selfiCheck.returnClosure = { image in
-            // Play with image here
-            // Code Here
-            // ...
-        }
+        DFSAInstance.initialize(success: { [weak self] viewController in
+             DispatchQueue.main.async {
+                 if let vc = viewController {
+                    self?.present(vc, animated: true, completion: nil)
+                 }
+            }
+        }, failure: { (error) in
+             // Get the error if you are not authorized to access framework.
+            print(error?.userInfo)
+         })
+         
+         DFSAInstance.returnClosure = { image in
+             // Play with image here
+             // Code Here
+             // ...
+
+         }
 
 Output would be:
 <br>
@@ -62,36 +70,31 @@ Output would be:
 
 <i>Just access the properties mentioned in the SDK. Have a look at the sample below:</i>
 
-        let selfiCheck = SelfieCheck.sharedInstance
-        selfiCheck.globalBGColor = #colorLiteral(red: 0.9137254902, green: 0.3921568627, blue: 0.3647058824, alpha: 1)
-        selfiCheck.globalMessagesColor = UIColor.white
-        selfiCheck.globalTitleColor = UIColor.white
-        selfiCheck.globalButtonCornerRadius = 5
-        selfiCheck.globalOptionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
-        selfiCheck.globalTitleOptionButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
-        selfiCheck.navigationTitleColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
-        selfiCheck.navigationBarColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        let DFSAInstance = DFSelfieAuth.sharedInstance
+        DFSAInstance.globalBGColor = #colorLiteral(red: 0.9137254902, green: 0.3921568627, blue: 0.3647058824, alpha: 1)
+        DFSAInstance.globalMessagesColor = UIColor.white
+        DFSAInstance.globalTitleColor = UIColor.white
+        DFSAInstance.globalButtonCornerRadius = 5
+        DFSAInstance.globalOptionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
+        DFSAInstance.globalTitleOptionButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        DFSAInstance.navigationTitleColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        DFSAInstance.globalActioButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        DFSAInstance.globalTitleActionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
 
-        selfiCheck.globalActioButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
-        selfiCheck.globalTitleActionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
-        selfiCheck.globalBorderButtonColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        selfiCheck.globalOptionBorderButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
-        selfiCheck.overlayColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        DFSAInstance.tipGuidanceOne = "Tip : Please look straight and then blink eyes."
+        DFSAInstance.titlePermissionVC = "Please Allow camera permission."
 
-        selfiCheck.tipGuidanceOne = "Tip : Please look straight and then blink eyes."
-        selfiCheck.titlePermissionVC = "Please Allow camera permission."
-
-        selfiCheck.storyboardInstance(success: { [weak self] viewController in
+        DFSAInstance.initialize(success: { [weak self] viewController in
             DispatchQueue.main.async {
                 if let vc = viewController {
                     self?.present(vc, animated: true, completion: nil)
                 }
             }
-            }, failure: { (error) in
-                print(error?.userInfo ?? "Your api token is not valid")
+        }, failure: { (error) in
+            print(error?.userInfo ?? "Your api token is not valid")
         })
 
-        selfiCheck.returnClosure = { image in
+        DFSAInstance.returnClosure = { image in
             self.selfieImageView.image = image
         }
 

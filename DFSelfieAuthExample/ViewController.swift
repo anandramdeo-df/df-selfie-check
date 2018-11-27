@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SelfieCheckFramework
+import DFSelfieAuth
 
 class ViewController: UIViewController {
 
@@ -50,26 +50,21 @@ class ViewController: UIViewController {
 
     func openViewWithUpdatedConfiguration() {
 
-        let selfiCheck = SelfieCheck.sharedInstance
-        selfiCheck.globalBGColor = #colorLiteral(red: 0.9137254902, green: 0.3921568627, blue: 0.3647058824, alpha: 1)
-        selfiCheck.globalMessagesColor = UIColor.white
-        selfiCheck.globalTitleColor = UIColor.white
-        selfiCheck.globalButtonCornerRadius = 5
-        selfiCheck.globalOptionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
-        selfiCheck.globalTitleOptionButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
-        selfiCheck.navigationTitleColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
-        selfiCheck.navigationBarColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        let DFSAInstance = DFSelfieAuth.sharedInstance
+        DFSAInstance.globalBGColor = #colorLiteral(red: 0.9137254902, green: 0.3921568627, blue: 0.3647058824, alpha: 1)
+        DFSAInstance.globalMessagesColor = UIColor.white
+        DFSAInstance.globalTitleColor = UIColor.white
+        DFSAInstance.globalButtonCornerRadius = 5
+        DFSAInstance.globalOptionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
+        DFSAInstance.globalTitleOptionButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        DFSAInstance.navigationTitleColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        DFSAInstance.globalActioButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
+        DFSAInstance.globalTitleActionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
 
-        selfiCheck.globalActioButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
-        selfiCheck.globalTitleActionButtonColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
-        selfiCheck.globalBorderButtonColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        selfiCheck.globalOptionBorderButtonColor = #colorLiteral(red: 0.4039215686, green: 0.7098039216, blue: 0.3647058824, alpha: 1)
-        selfiCheck.overlayColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        DFSAInstance.tipGuidanceOne = "Tip : Please look straight and then blink eyes."
+        DFSAInstance.titlePermissionVC = "Please Allow camera permission."
 
-        selfiCheck.tipGuidanceOne = "Tip : Please look straight and then blink eyes."
-        selfiCheck.titlePermissionVC = "Please Allow camera permission."
-
-        selfiCheck.storyboardInstance(success: { [weak self] viewController in
+        DFSAInstance.initialize(success: { [weak self] viewController in
             DispatchQueue.main.async {
                 if let vc = viewController {
                     self?.present(vc, animated: true, completion: nil)
@@ -79,7 +74,7 @@ class ViewController: UIViewController {
                 print(error?.userInfo ?? "Your api token is not valid")
         })
 
-        selfiCheck.returnClosure = { image in
+        DFSAInstance.returnClosure = { image in
             self.selfieImageView.image = image
         }
 
