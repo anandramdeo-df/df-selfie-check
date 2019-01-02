@@ -36,25 +36,12 @@ pod install
 - And instantiate the view with following code.
 
          // Open view with default configuration
-         let DFSAInstance = DFSelfieAuth.sharedInstance
-
-        DFSAInstance.initialize(success: { [weak self] viewController in
-             DispatchQueue.main.async {
-                 if let vc = viewController {
-                    self?.present(vc, animated: true, completion: nil)
-                 }
-            }
-        }, failure: { (error) in
-             // Get the error if you are not authorized to access framework.
-            print(error?.userInfo)
-         })
          
-         DFSAInstance.returnClosure = { image in
-             // Play with image here
-             // Code Here
-             // ...
-
-         }
+        DFSelfieAuth.sharedInstance.getSelfieImage(success: { (image) in
+            self.selfieImageView.image = image
+        }, failure: { (error) in
+            print(error?.userInfo ?? "Your api token is not valid")
+        })
 
 Output would be:
 <br>
@@ -84,19 +71,11 @@ Output would be:
         DFSAInstance.tipGuidanceOne = "Tip : Please look straight and then blink eyes."
         DFSAInstance.titlePermissionVC = "Please Allow camera permission."
 
-        DFSAInstance.initialize(success: { [weak self] viewController in
-            DispatchQueue.main.async {
-                if let vc = viewController {
-                    self?.present(vc, animated: true, completion: nil)
-                }
-            }
+        DFSAInstance.getSelfieImage(success: { (image) in
+            self.selfieImageView.image = image
         }, failure: { (error) in
             print(error?.userInfo ?? "Your api token is not valid")
         })
-
-        DFSAInstance.returnClosure = { image in
-            self.selfieImageView.image = image
-        }
 
 Updated UI output would be:
 <br>
