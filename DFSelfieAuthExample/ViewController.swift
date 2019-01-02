@@ -64,19 +64,11 @@ class ViewController: UIViewController {
         DFSAInstance.tipGuidanceOne = "Tip : Please look straight and then blink eyes."
         DFSAInstance.titlePermissionVC = "Please Allow camera permission."
 
-        DFSAInstance.initialize(success: { [weak self] viewController in
-            DispatchQueue.main.async {
-                if let vc = viewController {
-                    self?.present(vc, animated: true, completion: nil)
-                }
-            }
-            }, failure: { (error) in
-                print(error?.userInfo ?? "Your api token is not valid")
-        })
-
-        DFSAInstance.returnClosure = { image in
+        DFSAInstance.getSelfieImage(success: { (image) in
             self.selfieImageView.image = image
-        }
+        }, failure: { (error) in
+            print(error?.userInfo ?? "Your api token is not valid")
+        })
 
     }
     
