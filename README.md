@@ -31,13 +31,14 @@ Example:
 <key>server url</key>
 <string>http://abc.com/api/</string>
 ```
-
+### Token Configuration
 - Add your org's `SLAccessToken`  token in your `Info.plist` file.
     ```
     <key>SLAccessToken</key>
     <string>Enter your org&apos;s token</string>
     ```
 
+### How to use
 - `import DFSelfieAuth` in your `UIViewController` file where you want to use this feature.
 
 - And instantiate the view with following code.
