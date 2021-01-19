@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DFSelfieAuth"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "This SDK is created to automatically capture the user's selfie using the facial expression( eye-blink in our case)."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => 'https://github.com/anandramdeo-df/df-selfie-check/releases/download/1.0.6/DFSelfieAuth.zip' }
+  spec.source       = { :http => 'https://github.com/anandramdeo-df/df-selfie-check/releases/download/1.0.7/DFSelfieAuth.zip' }
   
   spec.ios.deployment_target = '10.0'
   spec.ios.vendored_frameworks = 'DFSelfieAuth.framework'
@@ -138,5 +138,10 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  
+  spec.pod_target_xcconfig = {
+   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+ }
+ spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
