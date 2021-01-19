@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C51F82DA6C1B78F9CEB2195 /* Pods_SelfieCheckDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CC53F4F461701EABB62E3D /* Pods_SelfieCheckDemo.framework */; };
-		A270BBE178E94F1E134977E1 /* Pods_DFSelfieAuthExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91077B6FCD169001CAE3411 /* Pods_DFSelfieAuthExample.framework */; };
+		9B933396AD6767F7933F280D /* Pods_DFSelfieAuthExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27AD29F6663B8B6C0A576BF /* Pods_DFSelfieAuthExample.framework */; };
 		C422BE8621746E9600A1D4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422BE8521746E9600A1D4E7 /* AppDelegate.swift */; };
 		C422BE8821746E9600A1D4E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422BE8721746E9600A1D4E7 /* ViewController.swift */; };
 		C422BE8B21746E9600A1D4E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C422BE8921746E9600A1D4E7 /* Main.storyboard */; };
@@ -30,8 +29,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		62CC53F4F461701EABB62E3D /* Pods_SelfieCheckDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfieCheckDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A68D7011404CE45C1B1B052E /* Pods-DFSelfieAuthExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFSelfieAuthExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DFSelfieAuthExample/Pods-DFSelfieAuthExample.release.xcconfig"; sourceTree = "<group>"; };
+		5089E148E5A6FF996B89832F /* Pods-DFSelfieAuthExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFSelfieAuthExample.release.xcconfig"; path = "Target Support Files/Pods-DFSelfieAuthExample/Pods-DFSelfieAuthExample.release.xcconfig"; sourceTree = "<group>"; };
+		A606BF68A5F87CC945301478 /* Pods-DFSelfieAuthExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFSelfieAuthExample.debug.xcconfig"; path = "Target Support Files/Pods-DFSelfieAuthExample/Pods-DFSelfieAuthExample.debug.xcconfig"; sourceTree = "<group>"; };
+		C27AD29F6663B8B6C0A576BF /* Pods_DFSelfieAuthExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFSelfieAuthExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C422BE8221746E9600A1D4E7 /* DFSelfieAuthExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DFSelfieAuthExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C422BE8521746E9600A1D4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C422BE8721746E9600A1D4E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,8 +39,6 @@
 		C422BE8C21746E9800A1D4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C422BE8F21746E9800A1D4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C422BE9121746E9800A1D4E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C72BDE5B9C0093FAECDD09B7 /* Pods-DFSelfieAuthExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFSelfieAuthExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DFSelfieAuthExample/Pods-DFSelfieAuthExample.debug.xcconfig"; sourceTree = "<group>"; };
-		E91077B6FCD169001CAE3411 /* Pods_DFSelfieAuthExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFSelfieAuthExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,21 +46,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C51F82DA6C1B78F9CEB2195 /* Pods_SelfieCheckDemo.framework in Frameworks */,
-				A270BBE178E94F1E134977E1 /* Pods_DFSelfieAuthExample.framework in Frameworks */,
+				9B933396AD6767F7933F280D /* Pods_DFSelfieAuthExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18705F57929754BFA2EE2118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C27AD29F6663B8B6C0A576BF /* Pods_DFSelfieAuthExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C422BE7921746E9600A1D4E7 = {
 			isa = PBXGroup;
 			children = (
 				C422BE8421746E9600A1D4E7 /* DFSelfieAuthExample */,
 				C422BE8321746E9600A1D4E7 /* Products */,
-				F709FF50342B6F43BCADF428 /* Frameworks */,
-				E59636D8206BECD897576F85 /* Pods */,
+				DFC772846BB2C56C73FADD6C /* Pods */,
+				18705F57929754BFA2EE2118 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,22 +92,13 @@
 			path = DFSelfieAuthExample;
 			sourceTree = "<group>";
 		};
-		E59636D8206BECD897576F85 /* Pods */ = {
+		DFC772846BB2C56C73FADD6C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C72BDE5B9C0093FAECDD09B7 /* Pods-DFSelfieAuthExample.debug.xcconfig */,
-				A68D7011404CE45C1B1B052E /* Pods-DFSelfieAuthExample.release.xcconfig */,
+				A606BF68A5F87CC945301478 /* Pods-DFSelfieAuthExample.debug.xcconfig */,
+				5089E148E5A6FF996B89832F /* Pods-DFSelfieAuthExample.release.xcconfig */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F709FF50342B6F43BCADF428 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				62CC53F4F461701EABB62E3D /* Pods_SelfieCheckDemo.framework */,
-				E91077B6FCD169001CAE3411 /* Pods_DFSelfieAuthExample.framework */,
-			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,12 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C422BE9421746E9800A1D4E7 /* Build configuration list for PBXNativeTarget "DFSelfieAuthExample" */;
 			buildPhases = (
-				30819963D056FE8BD1A0BE72 /* [CP] Check Pods Manifest.lock */,
+				F85E019E82889D83312EED2E /* [CP] Check Pods Manifest.lock */,
 				C422BE7E21746E9600A1D4E7 /* Sources */,
 				C422BE7F21746E9600A1D4E7 /* Frameworks */,
 				C422BE8021746E9600A1D4E7 /* Resources */,
 				C422BE9A21746EB800A1D4E7 /* Embed Frameworks */,
-				348A121A806029E77510EC3F /* [CP] Embed Pods Frameworks */,
+				EEC218B34B0759CEA8D708D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,40 +171,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30819963D056FE8BD1A0BE72 /* [CP] Check Pods Manifest.lock */ = {
+		EEC218B34B0759CEA8D708D5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DFSelfieAuthExample/Pods-DFSelfieAuthExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DFSelfieAuthExample/Pods-DFSelfieAuthExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DFSelfieAuthExample/Pods-DFSelfieAuthExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F85E019E82889D83312EED2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DFSelfieAuthExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		348A121A806029E77510EC3F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DFSelfieAuthExample/Pods-DFSelfieAuthExample-frameworks.sh",
-				"${PODS_ROOT}/DFSelfieAuth/DFSelfieAuth.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DFSelfieAuth.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DFSelfieAuthExample/Pods-DFSelfieAuthExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -363,7 +362,7 @@
 		};
 		C422BE9521746E9800A1D4E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C72BDE5B9C0093FAECDD09B7 /* Pods-DFSelfieAuthExample.debug.xcconfig */;
+			baseConfigurationReference = A606BF68A5F87CC945301478 /* Pods-DFSelfieAuthExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -371,6 +370,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DFSelfieAuthExample",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/DFSelfieAuthExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
@@ -388,7 +388,7 @@
 		};
 		C422BE9621746E9800A1D4E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A68D7011404CE45C1B1B052E /* Pods-DFSelfieAuthExample.release.xcconfig */;
+			baseConfigurationReference = 5089E148E5A6FF996B89832F /* Pods-DFSelfieAuthExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -397,6 +397,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DFSelfieAuthExample",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/DFSelfieAuthExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
@@ -406,7 +407,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ranosys.df.selfieCheckSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = RanosysWildcard;
+				PROVISIONING_PROFILE_SPECIFIER = DF_InHouse;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
